@@ -1,0 +1,100 @@
+#rental {
+    padding-bottom: 160px;
+    .rental__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-radius: 20px;
+        border: 1.5px solid #333;
+        background: transparent;
+        padding: 40px 70px 32px 32px;
+        position: relative;
+        &--left {
+            > h3 {
+                color: #000;
+                font-size: 36px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                @media (prefers-color-scheme: dark) {
+                    color: #fff;
+                }
+            }
+            > p {
+                color: #555;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                width: 590px;
+                margin-bottom: 94px;
+                @media (prefers-color-scheme: dark) {
+                    color: #fff;
+                }
+            }
+            > div {
+                display: flex;
+                gap: 10px;
+                .rental__wrapper--left-card {
+                    width: 200px;
+                    height: 160px;
+                    background-color: #F5F5F5;
+                    padding: 15px;
+                    border-radius: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    transition: all 0.2s ease;
+                    @media (prefers-color-scheme: dark) {
+                        background-color: #272727;
+                    }
+                    @media screen and (max-width: 835px) {
+                        width: 140px;
+                    }
+                    &:hover {
+                        background-color: #299764;
+                        p {
+                            color: #fff;
+                        }
+                        svg {
+                            path {
+                                fill: #fff;
+                            }
+                        }
+                    }
+                    > div {
+                        text-align: end;
+                        svg {
+                            path {
+                                @media (prefers-color-scheme: dark) {
+                                    fill: #fff;
+                                }
+                            }
+                        }
+                    }
+                    p {
+                        color: #000;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 22px;
+                        @media screen and (max-width: 835px) {
+                            font-size: 14px;
+                        }
+                        @media (prefers-color-scheme: dark) {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        &--right {
+            position: absolute;
+            bottom: 0;
+            right: 70px;
+            @media screen and (max-width: 835px) {
+                right: 20px;
+            }
+            img {
+                width: 284px;
+            }
+        }
+    }
+}

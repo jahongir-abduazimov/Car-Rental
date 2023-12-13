@@ -1,0 +1,107 @@
+#community {
+    padding: 100px 0;
+    background-color: #F5F5F5;
+    @media (prefers-color-scheme: dark) {
+        background-color: #272727;
+    }
+
+    .community__wrapper {
+        display: flex;
+        border-radius: 20px;
+        @media screen and (max-width: 835px) {
+            display: block;
+        }
+        &--left {
+            background-color: #fff;
+            width: 40%;
+            padding: 70px 70px;
+            @media (prefers-color-scheme: dark) {
+                background-color: #1C1C1C;
+            }
+            @media screen and (max-width: 835px) {
+                width: 100%;
+                display: flex;
+            }
+            h2 {
+                color: #000;
+                font-size: 38px;
+                font-weight: 500;
+                line-height: 50px;
+                margin-bottom: 30px;
+                @media (prefers-color-scheme: dark) {
+                    color: #fff;
+                }
+            }
+            .btn-title {
+                color: #555;
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 16px;
+                @media (prefers-color-scheme: dark) {
+                    color: #fff;
+                }
+            }
+            button {
+                padding: 18px 50px;
+                border-radius: 100px;
+                font-size: 18px;
+                font-weight: 500;
+                border: 2px solid;
+                // background: #FFF;
+                background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: all 0.2s linear;
+                cursor: pointer;
+                @media (prefers-color-scheme: dark) {
+                    background-color: #fff;
+                }
+            }
+            &-title {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                margin-bottom: 16px;
+                p {
+                    color: #4285F4;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        &--right {
+            width: 60%;
+            background-color: #299764;
+            padding: 100px 100px;
+            @media screen and (max-width: 835px) {
+                width: 100%;
+            }
+            &--card {
+                background-color: #fff;
+                padding: 24px;
+                max-width: 420px;
+                border-radius: 16px;
+                @media (prefers-color-scheme: dark) {
+                    background-color: #1C1C1C;
+                    color: #fff;
+                }
+                > div {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-bottom: 16px;
+                }
+                > p {
+                    color: #000;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    @media (prefers-color-scheme: dark) {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

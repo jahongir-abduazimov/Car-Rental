@@ -1,0 +1,94 @@
+#service {
+    padding-bottom: 160px;
+    .service__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+        > h2 {
+            color: #000;
+            text-align: center;
+            font-size: 36px;
+            font-weight: 600;
+            padding-bottom: 10px;
+            @media (prefers-color-scheme: dark) {
+                color: #fff;
+            }
+        }
+        > p {
+            color: #555;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            width: 684px;
+            @media (prefers-color-scheme: dark) {
+                color: #fff;
+            }
+        }
+    }
+    .service__cards--wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        .service__card {
+            display: flex;
+            // justify-content: space-between;
+            background-color: #F5F5F5;
+            max-width: 590px;
+            border-radius: 20px;
+            padding: 40px 40px 40px 32px;
+            @media screen and (max-width: 835px) {
+                width: 387px;
+                padding: 30px 30px 30px 24px;
+            }
+            @media (prefers-color-scheme: dark) {
+                background-color: #272727;
+            }
+            &--title {
+                h3 {
+                    color: #000;
+                    font-size: 32px;
+                    font-weight: 500;
+                    width: 288px;
+                    margin-bottom: 10px;
+                    @media (prefers-color-scheme: dark) {
+                        color: #fff;
+                    }
+                    @media screen and (max-width: 835px) {
+                        width: 252px;
+                        font-size: 28px;
+                    }
+                }
+                p {
+                    color: #555;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    @media (prefers-color-scheme: dark) {
+                        color: #fff;
+                    }
+                    @media screen and (max-width: 835px) {
+                        font-size: 14px;
+                    }
+                }
+
+                > div {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+            &--icon {
+                transition: all 0.2s ease;
+                svg {
+                    @media screen and (max-width: 835px) {
+                        width: 40px;
+                    }
+                }
+            }
+            &:hover .service__card--icon {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

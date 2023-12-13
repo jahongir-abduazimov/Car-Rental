@@ -1,0 +1,154 @@
+footer{
+    width: 100%;
+    border-top: 1.5px solid #333;
+    padding: 40px 0;
+    .footer__wrapper--top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        @media screen and (max-width: 835px) {
+            display: block;
+        }
+        .footer__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            img {
+                margin-bottom: 20px;
+            }
+            .footer__wrapper--top-title {
+                p {
+                    color: #000;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+            }
+            div {
+                width: 240px;
+            }
+            p{
+                color: #555;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 20px; /* 166.667% */
+                @media (prefers-color-scheme: dark) {
+                    color: #fff;
+                }
+            }
+        }
+        .footer__links {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding-bottom: 40px;
+            border-bottom: 1.5px solid #333;
+            h3 {
+                color: #000;
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 16px;
+                @media (prefers-color-scheme: dark) {
+                    color: #fff;
+                }
+            }
+            li {
+                list-style: none;
+                margin-bottom: 12px;
+            }
+            a {
+                text-decoration: none;
+                color: #555;
+                font-size: 14px;
+                font-weight: 500;
+                @media (prefers-color-scheme: dark) {
+                    color: #fff;
+                }
+                &:hover {
+                    color: #000;
+                    text-decoration: underline;
+                    @media (prefers-color-scheme: dark) {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .footer__wrapper--bottom {
+        display: flex;
+        justify-content: space-between;
+        &-title {
+            width: 158px;
+            p {
+                color: #000;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                @media (prefers-color-scheme: dark) {
+                    color: #fff;
+                }
+            }
+        }
+        &-links {
+            display: flex;
+            gap: 50px;
+            h4 {
+                color: #000;
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 16px;
+                @media (prefers-color-scheme: dark) {
+                    color: #fff;
+                }
+            }
+            li {
+                list-style: none;
+                padding-bottom: 12px;
+            }
+            a {
+                text-decoration: none;
+                color: #555;
+                font-size: 14px;
+                font-weight: 500;
+                @media (prefers-color-scheme: dark) {
+                    color: #fff;
+                }
+                &:hover {
+                    color: #000;
+                    text-decoration: underline;
+                    @media (prefers-color-scheme: dark) {
+                        color: #fff;
+                    }
+                }
+            }
+            .footer__bottom--icons {
+                display: flex;
+                gap: 15px;
+                margin-top: 22px;
+                > div {
+                    cursor: pointer;
+                    svg {
+                        path {
+                            @media (prefers-color-scheme: dark) {
+                                fill: #000;
+                            }
+                        }
+                        rect {
+                            @media (prefers-color-scheme: dark) {
+                                fill: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-button {
+            img {
+                padding: 15px;
+                background-color: #299764;
+                border-radius: 50%;
+            }
+        }
+    }
+}
