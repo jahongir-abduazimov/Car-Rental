@@ -6,6 +6,9 @@
         font-size: 24px;
         font-weight: 500;
         margin-bottom: 34px;
+        @media screen and (max-width: 475px) {
+            font-size: 20px;
+        }
     }
     .brands__icons {
         display: flex;
@@ -13,6 +16,11 @@
         @media screen and (max-width: 835px) {
             gap: 50px;
             overflow-x: scroll;
+        }
+        img {
+            @media screen and (max-width: 475px) {
+                width: 100px;
+            }
         }
     }
 }

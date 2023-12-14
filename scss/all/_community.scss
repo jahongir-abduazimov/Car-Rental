@@ -22,6 +22,10 @@
                 width: 100%;
                 display: flex;
             }
+            @media screen and (max-width: 475px) {
+                padding: 20px 24px;
+                display: block;
+            }
             h2 {
                 color: #000;
                 font-size: 38px;
@@ -78,6 +82,9 @@
             @media screen and (max-width: 835px) {
                 width: 100%;
             }
+            @media screen and (max-width: 475px) {
+                padding: 20px;
+            }
             &--card {
                 background-color: #fff;
                 padding: 24px;
@@ -91,6 +98,14 @@
                     display: flex;
                     justify-content: space-between;
                     padding-bottom: 16px;
+                    h3 {
+                        font-size: 14px;
+                    }
+                    p {
+                        color: #555;
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
                 }
                 > p {
                     color: #000;

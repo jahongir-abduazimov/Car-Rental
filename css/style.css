@@ -521,6 +521,13 @@ footer .footer__wrapper--top .footer__links {
   padding-bottom: 40px;
   border-bottom: 1.5px solid #333;
 }
+@media screen and (max-width: 475px) {
+  footer .footer__wrapper--top .footer__links {
+    flex-wrap: wrap;
+    -moz-column-gap: px;
+         column-gap: px;
+  }
+}
 footer .footer__wrapper--top .footer__links h3 {
   color: #000;
   font-size: 16px;
@@ -560,6 +567,11 @@ footer .footer__wrapper--bottom {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 475px) {
+  footer .footer__wrapper--bottom {
+    flex-direction: column;
+  }
+}
 footer .footer__wrapper--bottom-title {
   width: 158px;
 }
@@ -577,6 +589,12 @@ footer .footer__wrapper--bottom-title p {
 footer .footer__wrapper--bottom-links {
   display: flex;
   gap: 50px;
+}
+@media screen and (max-width: 475px) {
+  footer .footer__wrapper--bottom-links {
+    gap: 0;
+    flex-direction: column;
+  }
 }
 footer .footer__wrapper--bottom-links h4 {
   color: #000;
@@ -707,7 +725,7 @@ footer .footer__wrapper--bottom-button img {
 }
 
 .intro__search {
-  width: 600px;
+  max-width: 600px;
   background-color: #fff;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -723,6 +741,12 @@ footer .footer__wrapper--bottom-button img {
 @media screen and (max-width: 835px) {
   .intro__search {
     left: 15%;
+  }
+}
+@media screen and (max-width: 475px) {
+  .intro__search {
+    width: 100%;
+    left: 0;
   }
 }
 .intro__search input {
@@ -764,6 +788,11 @@ footer .footer__wrapper--bottom-button img {
     color: #fff;
   }
 }
+@media screen and (max-width: 475px) {
+  #cars .cars__title-top .cars__title {
+    font-size: 24px;
+  }
+}
 #cars .cars__title-top .cars__title-text {
   color: #555;
   font-size: 16px;
@@ -774,6 +803,11 @@ footer .footer__wrapper--bottom-button img {
 @media (prefers-color-scheme: dark) {
   #cars .cars__title-top .cars__title-text {
     color: #fff;
+  }
+}
+@media screen and (max-width: 475px) {
+  #cars .cars__title-top .cars__title-text {
+    font-size: 12px;
   }
 }
 #cars .cars__title-top .cars__buttons {
@@ -795,6 +829,14 @@ footer .footer__wrapper--bottom-button img {
     border: 1.5px solid #333;
   }
 }
+@media screen and (max-width: 475px) {
+  #cars .cars__title-top .cars__buttons button {
+    padding: 14px 20px;
+    gap: 14px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
 #cars .cars__title-top .cars__buttons button:hover {
   background-color: #299764;
   color: #fff;
@@ -802,7 +844,7 @@ footer .footer__wrapper--bottom-button img {
 #cars .cars__cards--wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 19px;
+  gap: 15px;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 835px) {
@@ -811,7 +853,7 @@ footer .footer__wrapper--bottom-button img {
   }
 }
 #cars .cars__cards--wrapper .cars__card {
-  width: 387px;
+  max-width: 387px;
   background-color: #F5F5F5;
   border-radius: 18px;
   padding: 30px 0;
@@ -822,6 +864,14 @@ footer .footer__wrapper--bottom-button img {
     background-color: #272727;
     color: #fff;
   }
+}
+@media screen and (max-width: 475px) {
+  #cars .cars__cards--wrapper .cars__card {
+    width: 100%;
+  }
+}
+#cars .cars__cards--wrapper .cars__card > img {
+  width: 358px;
 }
 @media (prefers-color-scheme: dark) {
   #cars .cars__cards--wrapper .cars__card--title svg path {
@@ -935,6 +985,12 @@ footer .footer__wrapper--bottom-button img {
     display: flex;
   }
 }
+@media screen and (max-width: 475px) {
+  #community .community__wrapper--left {
+    padding: 20px 24px;
+    display: block;
+  }
+}
 #community .community__wrapper--left h2 {
   color: #000;
   font-size: 38px;
@@ -997,6 +1053,11 @@ footer .footer__wrapper--bottom-button img {
     width: 100%;
   }
 }
+@media screen and (max-width: 475px) {
+  #community .community__wrapper--right {
+    padding: 20px;
+  }
+}
 #community .community__wrapper--right--card {
   background-color: #fff;
   padding: 24px;
@@ -1013,6 +1074,14 @@ footer .footer__wrapper--bottom-button img {
   display: flex;
   justify-content: space-between;
   padding-bottom: 16px;
+}
+#community .community__wrapper--right--card > div h3 {
+  font-size: 14px;
+}
+#community .community__wrapper--right--card > div p {
+  color: #555;
+  font-size: 12px;
+  font-weight: 400;
 }
 #community .community__wrapper--right--card > p {
   color: #000;
@@ -1036,6 +1105,11 @@ footer .footer__wrapper--bottom-button img {
   font-weight: 500;
   margin-bottom: 34px;
 }
+@media screen and (max-width: 475px) {
+  #brands p {
+    font-size: 20px;
+  }
+}
 #brands .brands__icons {
   display: flex;
   justify-content: space-between;
@@ -1044,6 +1118,11 @@ footer .footer__wrapper--bottom-button img {
   #brands .brands__icons {
     gap: 50px;
     overflow-x: scroll;
+  }
+}
+@media screen and (max-width: 475px) {
+  #brands .brands__icons img {
+    width: 100px;
   }
 }
 
@@ -1068,17 +1147,27 @@ footer .footer__wrapper--bottom-button img {
     color: #fff;
   }
 }
+@media screen and (max-width: 475px) {
+  #service .service__title > h2 {
+    font-size: 24px;
+  }
+}
 #service .service__title > p {
   color: #555;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  width: 684px;
+  max-width: 684px;
 }
 @media (prefers-color-scheme: dark) {
   #service .service__title > p {
     color: #fff;
+  }
+}
+@media screen and (max-width: 475px) {
+  #service .service__title > p {
+    font-size: 12px;
   }
 }
 #service .service__cards--wrapper {
@@ -1167,6 +1256,11 @@ footer .footer__wrapper--bottom-button img {
   padding: 40px 70px 32px 32px;
   position: relative;
 }
+@media screen and (max-width: 475px) {
+  #rental .rental__wrapper {
+    padding: 20px 24px;
+  }
+}
 #rental .rental__wrapper--left > h3 {
   color: #000;
   font-size: 36px;
@@ -1178,12 +1272,18 @@ footer .footer__wrapper--bottom-button img {
     color: #fff;
   }
 }
+@media screen and (max-width: 475px) {
+  #rental .rental__wrapper--left > h3 {
+    font-size: 24px;
+    width: 183px;
+  }
+}
 #rental .rental__wrapper--left > p {
   color: #555;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  width: 590px;
+  max-width: 590px;
   margin-bottom: 94px;
 }
 @media (prefers-color-scheme: dark) {
@@ -1191,9 +1291,21 @@ footer .footer__wrapper--bottom-button img {
     color: #fff;
   }
 }
+@media screen and (max-width: 475px) {
+  #rental .rental__wrapper--left > p {
+    font-size: 12px;
+    font-weight: 20px;
+    margin-bottom: 40px;
+  }
+}
 #rental .rental__wrapper--left > div {
   display: flex;
   gap: 10px;
+}
+@media screen and (max-width: 475px) {
+  #rental .rental__wrapper--left > div {
+    display: block;
+  }
 }
 #rental .rental__wrapper--left > div .rental__wrapper--left-card {
   width: 200px;
@@ -1214,6 +1326,13 @@ footer .footer__wrapper--bottom-button img {
 @media screen and (max-width: 835px) {
   #rental .rental__wrapper--left > div .rental__wrapper--left-card {
     width: 140px;
+  }
+}
+@media screen and (max-width: 475px) {
+  #rental .rental__wrapper--left > div .rental__wrapper--left-card {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 130px;
   }
 }
 #rental .rental__wrapper--left > div .rental__wrapper--left-card:hover {
@@ -1257,6 +1376,11 @@ footer .footer__wrapper--bottom-button img {
 @media screen and (max-width: 835px) {
   #rental .rental__wrapper--right {
     right: 20px;
+  }
+}
+@media screen and (max-width: 475px) {
+  #rental .rental__wrapper--right {
+    display: none;
   }
 }
 #rental .rental__wrapper--right img {

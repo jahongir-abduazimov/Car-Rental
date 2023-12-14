@@ -9,6 +9,9 @@
         background: transparent;
         padding: 40px 70px 32px 32px;
         position: relative;
+        @media screen and (max-width: 475px) {
+            padding: 20px 24px;
+        }
         &--left {
             > h3 {
                 color: #000;
@@ -18,21 +21,33 @@
                 @media (prefers-color-scheme: dark) {
                     color: #fff;
                 }
+                @media screen and (max-width: 475px) {
+                    font-size: 24px;
+                    width: 183px;
+                }
             }
             > p {
                 color: #555;
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 24px;
-                width: 590px;
+                max-width: 590px;
                 margin-bottom: 94px;
                 @media (prefers-color-scheme: dark) {
                     color: #fff;
+                }
+                @media screen and (max-width: 475px) {
+                    font-size: 12px;
+                    font-weight: 20px;
+                    margin-bottom: 40px;
                 }
             }
             > div {
                 display: flex;
                 gap: 10px;
+                @media screen and (max-width: 475px) {
+                    display: block;
+                }
                 .rental__wrapper--left-card {
                     width: 200px;
                     height: 160px;
@@ -48,6 +63,11 @@
                     }
                     @media screen and (max-width: 835px) {
                         width: 140px;
+                    }
+                    @media screen and (max-width: 475px) {
+                        width: 100%;
+                        margin-bottom: 20px;
+                        height: 130px;
                     }
                     &:hover {
                         background-color: #299764;
@@ -91,6 +111,9 @@
             right: 70px;
             @media screen and (max-width: 835px) {
                 right: 20px;
+            }
+            @media screen and (max-width: 475px) {
+                display: none;
             }
             img {
                 width: 284px;

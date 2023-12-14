@@ -14,6 +14,9 @@
                 @media (prefers-color-scheme: dark) {
                     color: #fff;
                 }
+                @media screen and (max-width: 475px) {
+                    font-size: 24px;
+                }
             }
         
             .cars__title-text {
@@ -24,6 +27,9 @@
                 padding-bottom: 40px;
                 @media (prefers-color-scheme: dark) {
                     color: #fff;
+                }
+                @media screen and (max-width: 475px) {
+                    font-size: 12px;
                 }
             }
     
@@ -42,6 +48,12 @@
                         color: #fff;
                         border: 1.5px solid #333;
                     }
+                    @media screen and (max-width: 475px) {
+                        padding: 14px 20px;
+                        gap: 14px;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
                     &:hover {
                         background-color: #299764;
                         color: #fff;
@@ -52,13 +64,13 @@
     .cars__cards--wrapper {
         display: flex;
         flex-wrap: wrap;
-        gap: 19px;
+        gap: 15px;
         margin-bottom: 40px;
         @media screen and (max-width: 835px) {
             gap: 20px;
         }
         .cars__card {
-            width: 387px;
+            max-width: 387px;
             background-color: #F5F5F5;
             border-radius: 18px;
             padding: 30px 0;
@@ -66,6 +78,13 @@
             @media (prefers-color-scheme: dark) {
                 background-color: #272727;
                 color: #fff;
+            }
+            @media screen and (max-width: 475px) {
+                width: 100%;
+            }
+
+            > img {
+                width: 358px;
             }
 
             &--title {
